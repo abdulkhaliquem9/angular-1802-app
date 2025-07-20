@@ -1,0 +1,16 @@
+<table border="1">
+    <thead>
+        <tr>
+            @for (item of tableHeader; track item.label) {<th>{{ item.label }}</th>}
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of data; track item.name) {
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.gender }}</td>
+        </tr>
+        }
+    </tbody>
+</table>
